@@ -5,7 +5,6 @@ define check_git_status
 		echo refusing to proceed, repository contains uncommited changes; \
 		exit 1; \
 	fi
-	echo ok
 endef
 
 build:
