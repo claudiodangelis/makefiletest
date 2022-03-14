@@ -1,6 +1,6 @@
 .PHONY: build
 SHELL=/bin/bash
-main_branch = main
+main_branch = master
 define check_git_status
 	if [[ $$(git status --porcelain 2> /dev/null) != "" ]]; then \
 		echo "refusing to proceed, repository contains uncommited changes"; \
