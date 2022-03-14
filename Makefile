@@ -10,7 +10,7 @@ define check_git_status
 endef
 
 define check_version
-	if 	! [[ "$$v" =~ ^[0-9]\.[0-9]\.[0-9]$$ ]]; then \
+	if 	! [[ "$$v" =~ ^[0-9]+\.[0-9]+\.[0-9]+$$ ]]; then \
 		echo "malformed version"; \
 		exit 1; \
 	fi
